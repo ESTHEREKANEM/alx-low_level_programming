@@ -3,7 +3,7 @@
 * main - Entry point
 *
 * Description: using the main function
-* this program prints the alphabet in lowercase, followed by a new line
+* this program prints "The alphabet in lowercase, followed by a new line
 * Return: 0
 */
 int main(void)
