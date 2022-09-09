@@ -24,7 +24,6 @@ int main(void)
 				putchar((p % 10) + '0');
 
 				if (i != 98)
-
 				{
 					putchar(',');
 				}	putchar(' ');
