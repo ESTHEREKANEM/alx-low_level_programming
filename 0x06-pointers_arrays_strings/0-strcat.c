@@ -11,13 +11,22 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int index = 0, dest_len = 0;
+	int x;
+	int y;
 
-	while (dest[index++])
-		dest_len++;
+	x = 0;
 
-	for (index - 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-
+	while (dest[x] != '\0')
+	{
+		x++;
+	}
+	y = 0;
+	while (src[y] != '\0')
+	{
+		dest[x] = src[y];
+		x++;
+		y++;
+	}
+	dest[x] = '\0';
 	return (dest);
 }
