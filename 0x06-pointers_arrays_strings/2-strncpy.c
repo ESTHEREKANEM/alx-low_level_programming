@@ -5,16 +5,24 @@
  * @dest: buffer storing the sting copy
  * @src: the source string
  * @n: max number of byte copied
- * Returns: returns 0
+ * Return: returns dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int x;
+	int b;
 
-	for (x = 0; x < n && src[x] != '\0'; x++)
-		dest[x] = src[x];
-	for ( ; x < n; x++)
-		dest[x] = '\0';
+	b = 0;
+
+	while (src[b] != '\0' && b < n)
+	{
+		dest[b] = src[b];
+		b++;
+	}
+	while (b < n)
+	{
+		dest[b] = '\0';
+		b++;
+	}
 	return (dest);
 }
